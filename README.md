@@ -3,3 +3,4 @@
 # 各个目录组件介绍
 1
 横向滑动
+![image](https://github.com/menglin1997/BLEConn/blob/master/static/1.gif)
