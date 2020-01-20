@@ -4,6 +4,7 @@
 		<view class="text-area">
 			<text class="title">{{title}}</text>
 		</view>
+		<!-- 横向滑动 start -->
 		<view class="news-nav">
 			<scroll-view scroll-x="true">
 				<text>类目一</text>
@@ -16,6 +17,7 @@
 				<text>类目一</text>
 			</scroll-view>
 		</view>
+		<!-- 横向滑动 end -->
 
 	</view>
 </template>
@@ -58,6 +60,7 @@
 </script>
 
 <style lang="scss">
+	// 横向滑动 start
 	.news-nav {
 		margin: 70rpx 32rpx 0;
 		height: 112rpx;
@@ -81,6 +84,6 @@
 			}
 		}
 	}
-	
+	// 横向滑动 end
 
 </style>
