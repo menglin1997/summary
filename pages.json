@@ -1,9 +1,39 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/1/index",
+			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "横向滑动"
+			  "app-plus": {
+			    "animationType": "slide-in-right",
+			    "bounce": "none",
+			    "pullToRefresh": {
+			      "support": true,
+			      "style": "circle",
+			      "color": "#FF4D5C",
+			      "range": "120px",
+			      "height": "150px"
+			    },
+			    "titleNView": {
+			      "backgroundColor": "#ffffff",
+			      "type": "transparent",
+			      "searchInput": {
+			        "align": "left",
+			        "placeholder": "铝碳酸美片",
+			        "backgroundColor": "rgba(0,0,0,0.05)",
+			        "placeholderColor": "rgba(0,0,0,0.2)",
+			        "borderRadius": "15px",
+			        "disabled": true
+			      },
+			      "buttons": [{
+			        "text": "医院",
+			        "float": "left",
+			        "select": true,
+			        "fontSize": "14px",
+			        "width": "auto",
+			        "background": "rgba(0,0,0,0)"
+			      }]
+			    }
+			  }
 			}
 		}
 	],
