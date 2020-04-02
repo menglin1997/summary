@@ -1,0 +1,72 @@
+.login {
+	.logo {
+		width: 100%;
+		height: 292rpx;
+		background: url($logo-base64) no-repeat;
+		background-size: 432.2rpx 292rpx;
+		font-size:50rpx;
+		font-family:PingFang SC;
+		font-weight:bold;
+		color:rgba(51,51,51,1);
+		padding-left: 71.1rpx;
+		position: relative;
+		text {
+			position: absolute;
+			bottom: 0;
+		}
+	}
+	// 输入框
+	.form {
+		padding: 0 72rpx;
+		padding-top: 42rpx;
+		.form-ipt {
+			height: 138rpx;
+			padding-top: 70rpx;
+			border-bottom: 1rpx solid #EBEBEB;
+		}
+		.form-ipt-active {
+			border-bottom: 1rpx solid #0078FF;
+		}
+		.form-code {
+			display: flex;
+			justify-content: space-between;
+			text {
+				color: #185FFF;
+			}
+		}
+		
+	}
+	.form-btn {
+		width:636rpx;
+		height:86rpx;
+		background:#0078FF;
+		border-radius:10rpx;
+		margin: auto;
+		margin-top: 151rpx;
+		font-size:34rpx;
+		font-family:PingFang SC;
+		font-weight:500;
+		color:rgba(255,255,255,1);
+		text-align: center;
+		line-height: 86rpx;
+		margin-bottom: 40rpx;
+	}
+	.tips {
+		text-align: center;
+		font-size:28rpx;
+		font-family:PingFang SC;
+		font-weight:500;
+		color:rgba(153,153,153,1);
+		.tips-register {
+			color: #0078FF;
+		}
+	}
+	// 隐私协议
+	.privacy {
+		text-align: center;
+		font-size:26rpx;
+		font-family:PingFang SC;
+		font-weight:500;
+		color:rgba(102,102,102,1);
+	}
+}
