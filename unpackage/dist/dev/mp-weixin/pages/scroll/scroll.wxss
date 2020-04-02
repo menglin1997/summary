@@ -1,0 +1,225 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 	.card {
+		margin-top: 20rpx;
+		padding-bottom: 25rpx;
+	
+		.header {
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 30rpx;
+	
+			.title {
+				font-size: 30rpx;
+				color: @black333;
+				font-weight: bold;
+			}
+	
+			.more {
+				font-size: 24rpx;
+				color: @black999;
+	
+				.img {
+					width: 10rpx;
+					height: 19rpx;
+					margin-left: 12rpx;
+				}
+			}
+		}
+	
+		.content {
+			height: 348rpx;
+	
+			.left {
+				position: relative;
+				width: 276rpx;
+				margin-right: 50rpx;
+				background-color: white;
+				box-shadow: 0 3rpx 10rpx 3rpx rgba(228, 228, 228, 1);
+				border-radius: 10rpx;
+				flex-shrink: 0;
+				text-align: center;
+				padding-top: 90rpx;
+				box-sizing: border-box;
+				overflow: hidden;
+	
+				.img {
+					width: 163rpx;
+					height: 163rpx;
+				}
+			}
+	
+			.right {
+				flex: 1;
+	
+				.right-card {
+					height: 165rpx;
+					position: relative;
+					background-color: white;
+					box-shadow: 0 3rpx 10rpx 3rpx rgba(228, 228, 228, 1);
+					border-radius: 10rpx;
+					margin-bottom: 20rpx;
+					text-align: center;
+					overflow: hidden;
+	
+					.img {
+						width: 300rpx;
+						height: 85rpx;
+						margin: 38rpx;
+					}
+				}
+			}
+	
+			.text {
+				position: absolute;
+				bottom: 0;
+				font-size: 26rpx;
+				width: 100%;
+				height: 63rpx;
+				background-color: rgba(0, 0, 0, 0.5);
+				text-align: center;
+				line-height: 63rpx;
+				color: white;
+				margin-top: 30rpx;
+			}
+		}
+	}
+	
+	 */
+	
+

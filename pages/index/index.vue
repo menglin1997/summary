@@ -1,7 +1,7 @@
 <template>
 	<view class="content">
 
-
+		<!-- lunbotu -->
 		<view class="page-top">
 			<view class="mask-white"></view>
 			<view>
@@ -13,6 +13,8 @@
 				</swiper>
 			</view>
 		</view>
+		
+		<!-- 公告 -->
 		<view class="adv-wapper">
 			<view class="lside">
 				<image src="/static/oa/icon_index08.png"></image>
@@ -27,7 +29,7 @@
 			</view>
 		</view>
 
-		<!-- 横向滑动 start -->
+		<!-- 横向滑动Navbar start -->
 		<view class="mj-nav-wapper" id="mj_nav_wapper" @touchmove.stop.prevent>
 			<view :class="{'mj-nav-content': !isFixed , 'mj-nav-content-fixed': isFixed}">
 				<scroll-view scroll-x class="bg-white nav" scroll-with-animation :scroll-left="scrollLeft">
@@ -39,6 +41,10 @@
 			</view>
 		</view>
 		<!-- 横向滑动 end -->
+		
+		
+		<!-- navbar对应的列表内容 -->
+
 		<swiper class="mews-swiper" :current="currentTabIndex" @change="newsSwiperChange">
 			<swiper-item v-for="(news,id) in listData" :key="id">
 				<scroll-view :scroll-y="isFixed" class="news-list-scroll-view" @scrolltolower="getList">
@@ -53,7 +59,7 @@
 								<view class="desc">{{item.synopsis}}</view>
 								<view class="placeholder"></view>
 								<view class="time">
-								<text>{{item.create_time}}</text>
+									<text>{{item.create_time}}</text>
 									<image :src="'/static/oa/icon_index0' + (item.is_praise == 1 ? '5' : '4') + '.png'"></image> {{item.praise_num}}
 								</view>
 							</view>
@@ -66,10 +72,11 @@
 						<view class="loading-wapper" v-if="news.loadedAll && !news.noListData && news.lists.length != 0">
 							<text class="loading-txt">已加载全部{{news.name}}新闻~</text>
 						</view>
+						-->
 						<view class="public-page-empty" v-if="(news.loadedAll && news.noListData) || (news.loadedAll && news.lists.length == 0)">
 							<image src="/static/empty/empty11.png" style="width: 400upx; height: 294upx"></image>
 							<view class="txt">暂无{{news.name}}新闻</view>
-						</view> -->
+						</view> 
 					</view>
 				</scroll-view>
 			</swiper-item>
@@ -82,7 +89,7 @@
 <script>
 	let statusBarAndNavBarHeight = uni.getSystemInfoSync().statusBarHeight + 44
 
-const app = getApp()
+	const app = getApp()
 	export default {
 		data() {
 			return {
@@ -166,7 +173,7 @@ const app = getApp()
 				],
 				listData: [
 					{
-						lists:[{
+						lists: [{
 							comment_num: 128,
 							content: "沙发沙发",
 							create_time: "2019-12-17 19:41:37",
@@ -185,7 +192,7 @@ const app = getApp()
 						}]
 					},
 					{
-						lists:[{
+						lists: [{
 							comment_num: 128,
 							content: "沙发沙发",
 							create_time: "2019-12-17 19:41:37",
@@ -201,7 +208,10 @@ const app = getApp()
 							title: "糖尿病患者检查指南",
 							type_id: 1,
 							user_id: 0
-						},{
+						}]
+					},
+					{
+						lists: [{
 							comment_num: 128,
 							content: "沙发沙发",
 							create_time: "2019-12-17 19:41:37",
@@ -217,7 +227,10 @@ const app = getApp()
 							title: "糖尿病患者检查指南",
 							type_id: 1,
 							user_id: 0
-						},{
+						}]
+					},
+					{
+						lists: [{
 							comment_num: 128,
 							content: "沙发沙发",
 							create_time: "2019-12-17 19:41:37",
@@ -233,7 +246,10 @@ const app = getApp()
 							title: "糖尿病患者检查指南",
 							type_id: 1,
 							user_id: 0
-						},{
+						}]
+					},
+					{
+						lists: [{
 							comment_num: 128,
 							content: "沙发沙发",
 							create_time: "2019-12-17 19:41:37",
@@ -249,7 +265,10 @@ const app = getApp()
 							title: "糖尿病患者检查指南",
 							type_id: 1,
 							user_id: 0
-						},{
+						}]
+					},
+					{
+						lists: [{
 							comment_num: 128,
 							content: "沙发沙发",
 							create_time: "2019-12-17 19:41:37",
@@ -265,7 +284,7 @@ const app = getApp()
 							title: "糖尿病患者检查指南",
 							type_id: 1,
 							user_id: 0
-						},{
+						}, {
 							comment_num: 128,
 							content: "沙发沙发",
 							create_time: "2019-12-17 19:41:37",
@@ -281,7 +300,71 @@ const app = getApp()
 							title: "糖尿病患者检查指南",
 							type_id: 1,
 							user_id: 0
-						},{
+						}, {
+							comment_num: 128,
+							content: "沙发沙发",
+							create_time: "2019-12-17 19:41:37",
+							id: 54,
+							images: "http://hzoa.huaiyangren.cn/uploads/images/20200108/1dd280b6ba3ea20ea73bf269f8f81366.png",
+							is_del: 0,
+							is_praise: 0,
+							is_tj: 1,
+							is_top: 0,
+							praise_num: 5,
+							status: 1,
+							synopsis: "据不完全统计，糖尿病在中国的发病率达到2%,中国已确诊的糖尿病患者已超过4000万，并以每年100万的速度递增，这个数字是非常惊人的。医学界还没有能完全治愈这种病症的特效药。临床研究也证实，药物治疗和控制饮食相结合对病情控制很有利，正如俗话所说:“三分治，七分养”。关键在于怎么养，就是能吃什么，要怎么吃才安全。《糖尿病饮食指南》就是针对这样的问题而编的，将是您居家旅行的必备之选！",
+							title: "糖尿病患者检查指南",
+							type_id: 1,
+							user_id: 0
+						}, {
+							comment_num: 128,
+							content: "沙发沙发",
+							create_time: "2019-12-17 19:41:37",
+							id: 54,
+							images: "http://hzoa.huaiyangren.cn/uploads/images/20200108/1dd280b6ba3ea20ea73bf269f8f81366.png",
+							is_del: 0,
+							is_praise: 0,
+							is_tj: 1,
+							is_top: 0,
+							praise_num: 5,
+							status: 1,
+							synopsis: "据不完全统计，糖尿病在中国的发病率达到2%,中国已确诊的糖尿病患者已超过4000万，并以每年100万的速度递增，这个数字是非常惊人的。医学界还没有能完全治愈这种病症的特效药。临床研究也证实，药物治疗和控制饮食相结合对病情控制很有利，正如俗话所说:“三分治，七分养”。关键在于怎么养，就是能吃什么，要怎么吃才安全。《糖尿病饮食指南》就是针对这样的问题而编的，将是您居家旅行的必备之选！",
+							title: "糖尿病患者检查指南",
+							type_id: 1,
+							user_id: 0
+						}, {
+							comment_num: 128,
+							content: "沙发沙发",
+							create_time: "2019-12-17 19:41:37",
+							id: 54,
+							images: "http://hzoa.huaiyangren.cn/uploads/images/20200108/1dd280b6ba3ea20ea73bf269f8f81366.png",
+							is_del: 0,
+							is_praise: 0,
+							is_tj: 1,
+							is_top: 0,
+							praise_num: 5,
+							status: 1,
+							synopsis: "据不完全统计，糖尿病在中国的发病率达到2%,中国已确诊的糖尿病患者已超过4000万，并以每年100万的速度递增，这个数字是非常惊人的。医学界还没有能完全治愈这种病症的特效药。临床研究也证实，药物治疗和控制饮食相结合对病情控制很有利，正如俗话所说:“三分治，七分养”。关键在于怎么养，就是能吃什么，要怎么吃才安全。《糖尿病饮食指南》就是针对这样的问题而编的，将是您居家旅行的必备之选！",
+							title: "糖尿病患者检查指南",
+							type_id: 1,
+							user_id: 0
+						}, {
+							comment_num: 128,
+							content: "沙发沙发",
+							create_time: "2019-12-17 19:41:37",
+							id: 54,
+							images: "http://hzoa.huaiyangren.cn/uploads/images/20200108/1dd280b6ba3ea20ea73bf269f8f81366.png",
+							is_del: 0,
+							is_praise: 0,
+							is_tj: 1,
+							is_top: 0,
+							praise_num: 5,
+							status: 1,
+							synopsis: "据不完全统计，糖尿病在中国的发病率达到2%,中国已确诊的糖尿病患者已超过4000万，并以每年100万的速度递增，这个数字是非常惊人的。医学界还没有能完全治愈这种病症的特效药。临床研究也证实，药物治疗和控制饮食相结合对病情控制很有利，正如俗话所说:“三分治，七分养”。关键在于怎么养，就是能吃什么，要怎么吃才安全。《糖尿病饮食指南》就是针对这样的问题而编的，将是您居家旅行的必备之选！",
+							title: "糖尿病患者检查指南",
+							type_id: 1,
+							user_id: 0
+						}, {
 							comment_num: 128,
 							content: "沙发沙发",
 							create_time: "2019-12-17 19:41:37",
@@ -300,13 +383,13 @@ const app = getApp()
 						}]
 					}
 				]
-				
+
 			}
 		},
 		onLoad() {
 			console.log(app.globalData)
 		},
-		 // 新闻分类吸顶
+		// 新闻分类吸顶
 		onPageScroll(e) {
 			let view = uni.createSelectorQuery().select('#mj_nav_wapper');
 			view.boundingClientRect(data => {

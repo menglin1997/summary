@@ -1,0 +1,135 @@
+	.container {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+
+		.swiper-box {
+			flex: 1;
+			overflow: auto;
+
+			.tab-content {
+				height: 100%;
+				overflow-y: auto;
+			}
+		}
+
+		.no-data {
+			margin-top: 195rpx;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			image {
+				width: 354rpx;
+				height: 262rpx;
+			}
+
+			text {
+				margin-top: 56rpx;
+				font-size: 32rpx;
+				color: #999999;
+			}
+		}
+	}
+
+	.navbar {
+		display: flex;
+		height: 40px;
+		padding: 0 5px;
+		background: #fff;
+		margin-bottom: 10rpx;
+		position: relative;
+		z-index: 10;
+		.nav-item {
+			flex: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			font-size: 15px;
+			position: relative;
+
+			&.current {
+				&:after {
+					content: '';
+					position: absolute;
+					left: 50%;
+					bottom: 0;
+					transform: translateX(-50%);
+					width: 96rpx;
+					height: 0;
+					border-bottom: 2rpx solid #F5432D;
+				}
+			}
+		}
+	}
+
+	.list {
+		position: relative;
+		width: 684rpx;
+		height: 154rpx;
+		box-shadow: 0rpx 6rpx 17rpx 3rpx rgba(214, 213, 212, 0.28);
+		border-radius: 6rpx;
+		margin: auto;
+		margin-bottom: 23rpx;
+		display: flex;
+
+		.priceImg {
+			width: 178rpx;
+			height: 154rpx;
+			background-size: 178rpx 154rpx;
+			font-size: 55rpx;
+			font-family: DIN;
+			text-align: center;
+			line-height: 154rpx;
+			font-weight: 500;
+			color: rgba(255, 255, 255, 1);
+
+			text {
+				font-size: 20rpx;
+			}
+		}
+
+		.right {
+			margin-left: 30rpx;
+			display: flex;
+			flex-direction: column;
+
+			.line {
+				display: inline-block;
+				width: 327rpx;
+				border-bottom: 1rpx dashed #E4E4E3;
+			}
+		}
+
+		.l-btn {
+			height: 154rpx;
+			flex: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+
+			text {
+				display: inline-block;
+				width: 138rpx;
+				height: 40rpx;
+				background: #f5432d;
+				box-shadow: 0 3rpx 7rpx 0 #f5432d;
+				border-radius: 20px;
+				text-align: center;
+				line-height: 40rpx;
+				font-size: 24rpx;
+				color: #FDFDFD;
+			}
+
+			image {
+				position: absolute;
+				right: 0;
+				top: 25rpx;
+				width: 104rpx;
+				height: 104rpx;
+			}
+		}
+	}

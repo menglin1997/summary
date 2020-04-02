@@ -18,7 +18,7 @@
 			      "type": "transparent",
 			      "searchInput": {
 			        "align": "left",
-			        "placeholder": "铝碳酸美片",
+			        "placeholder": "搜索",
 			        "backgroundColor": "rgba(0,0,0,0.05)",
 			        "placeholderColor": "rgba(0,0,0,0.2)",
 			        "borderRadius": "15px",
@@ -36,7 +36,38 @@
 			  }
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/navbar/index",
+            "style" : {
+							"navigationBarTitleText":"Navbar"
+						}
+        }
+        ,{
+            "path" : "pages/scroll/scroll",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" : {}
+        }
+    ],
+		"tabBar": {
+		    "color": "#7A7E83",
+		    "selectedColor": "#3cc51f",
+		    "borderStyle": "black",
+		    "backgroundColor": "#ffffff",
+		    "list": [{
+		        "pagePath": "pages/index/index",
+		        "iconPath": "",
+		        "selectedIconPath": "",
+		        "text": "首页"
+		    }, {
+		        "pagePath": "pages/navbar/index",
+		        "iconPath": "",
+		        "selectedIconPath": "",
+		        "text": "Navbar"
+		    }]
+		},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",

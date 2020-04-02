@@ -1,0 +1,274 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.page-top {
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+}
+.page-top .mask-white {
+    width: 100%;
+    height: 750rpx;
+    -webkit-transform: scaleY(0.026);
+            transform: scaleY(0.026);
+    position: absolute;
+    bottom: -10rpx;
+    background-color: #fff;
+    z-index: 999;
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+}
+.page-top .screen-swiper {
+    height: 400rpx;
+    min-height: inherit;
+}
+.page-top .screen-swiper image {
+      height: 400rpx;
+}
+.page-top .top-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 326rpx;
+    width: 100%;
+}
+.page-top .swiper-wapper {
+    padding: 0 32rpx;
+}
+/* // 横向滑动 start */
+.news-nav {
+  margin: 70rpx 32rpx 0;
+  height: 112rpx;
+  line-height: 112rpx;
+}
+.news-nav scroll-view {
+    white-space: nowrap;
+    width: 100%;
+}
+.news-nav scroll-view text {
+      display: inline-block;
+      width: 150rpx;
+      height: 60rpx;
+      text-align: center;
+      font-size: 28rpx;
+      color: #333333;
+}
+.news-nav scroll-view text:nth-child(1) {
+        color: #083C9D;
+        font-size: 32rpx;
+        color: #333333;
+}
+/* // 横向滑动 end */
+.adv-wapper {
+  padding: 0 20rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  height: 104rpx;
+  background-color: #fff;
+}
+.adv-wapper .lside {
+    width: 78rpx;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+}
+.adv-wapper .lside image {
+      width: 38rpx;
+      height: 34rpx;
+}
+.adv-wapper .rside {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+            flex: 1;
+    padding-left: 20rpx;
+}
+.adv-wapper .rside .swiper {
+      height: 60rpx;
+}
+.adv-wapper .rside .swiper .adv-text {
+        line-height: 60rpx;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+}
+.mj-nav-wapper {
+  position: relative;
+  width: 100%;
+  height: 100rpx;
+  background-color: #fff;
+}
+.mj-nav-wapper .mj-nav-content {
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.mj-nav-wapper .mj-nav-content-fixed {
+    position: fixed;
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    left: 0;
+    right: 0;
+    top: calc(44px + 25px);
+    z-index: 999;
+    box-shadow: 0px 3px 20px rgba(153, 153, 153, 0.2);
+}
+.mj-nav-wapper .cu-item {
+    font-size: 28rpx;
+    -webkit-transition: all ease .3s;
+    transition: all ease .3s;
+    position: relative;
+    color: #BFBFBF;
+}
+.mj-nav-wapper .cu-item .mj-img {
+      width: 48rpx;
+      height: 13rpx;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 10rpx;
+      margin: auto;
+      opacity: 0;
+      -webkit-transition: all ease .2s;
+      transition: all ease .2s;
+}
+.mj-nav-wapper .cu-item.cur {
+      font-size: 32rpx;
+      font-weight: bold;
+      border: 0;
+}
+.mj-nav-wapper .cu-item.cur image {
+        opacity: 1;
+}
+.mj-nav-wapper .text-green {
+    color: #333333;
+}
+.mews-swiper {
+  height: calc(100vh - 44px - 25px - 100rpx);
+}
+.mews-swiper .news-list-scroll-view {
+    height: calc(100vh - 44px - 25px - 100rpx);
+}
+.mews-swiper .news-list {
+    padding: 20rpx 32rpx 0;
+}
+.mews-swiper .news-list .news-item {
+      background: #ffffff;
+      opacity: 1;
+      padding: 30rpx 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      position: relative;
+      overflow: hidden;
+}
+.mews-swiper .news-list .news-item:first-child {
+        padding-top: 0;
+}
+.mews-swiper .news-list .news-item .lside {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+                flex: 1;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+                justify-content: space-between;
+        padding: 6rpx 0 6rpx 20rpx;
+        overflow: hidden;
+}
+.mews-swiper .news-list .news-item .lside .title {
+          font-size: 32rpx;
+          color: #333;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          padding-bottom: 6rpx;
+}
+.mews-swiper .news-list .news-item .lside .placeholder {
+          -webkit-box-flex: 1;
+          -webkit-flex: 1;
+                  flex: 1;
+}
+.mews-swiper .news-list .news-item .lside .desc {
+          font-size: 28rpx;
+          color: #999;
+          overflow: hidden;
+          display: -webkit-box;
+          text-overflow: ellipsis;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+}
+.mews-swiper .news-list .news-item .lside .time {
+          font-size: 22rpx;
+          color: #bfbfbf;
+}
+.mews-swiper .news-list .news-item .lside .time image {
+            width: 24rpx;
+            height: 24rpx;
+            margin: 0 10rpx 0 20rpx;
+}
+.mews-swiper .news-list .news-item .rside {
+        width: 180rpx;
+        height: 189rpx;
+        background: #f7f7f7;
+        opacity: 1;
+        border-radius: 10rpx;
+        position: relative;
+}
+.mews-swiper .news-list .news-item .rside .tag {
+          position: absolute;
+          left: 0;
+          top: 0;
+          border-top-left-radius: 10rpx;
+          border-bottom-right-radius: 10rpx;
+          font-size: 22rpx;
+          color: #fff;
+          z-index: 10;
+          background-color: #0DAAEB;
+          min-width: 46rpx;
+          box-sizing: border-box;
+          text-align: center;
+          padding: 0 14rpx;
+          line-height: 32rpx;
+}
+
