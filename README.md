@@ -54,6 +54,4 @@ white-space: nowrap;
 display: inline-block;
 ````
 
-![image](https://github.com/menglin1997/summary/blob/master/static/
-
-Navbar.gif)
+![Navbar](https://github.com/menglin1997/summary/blob/master/static/Navbar.gif)
